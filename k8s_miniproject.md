@@ -77,7 +77,7 @@ In this task. you'll be creating a **Pod** with specific parameters within a par
 
 ### Recommended Labs:
 - Lab 15, step 15 (create an object on a specific namespace)
-- Lab 12. 💻 Create and Configure Basic Pods
+- Lab 12 💻 Create and Configure Basic Pods
 
 ### Task Setup
 
@@ -117,7 +117,7 @@ Create a single pod in namespace `talent` with the image `nginx:1.7.9`. The pod 
 In this task. you'll be rolling back a **Deployment** to a previously stable version. Deployments come equipped with amazing version control features which allow for rollbacks, and tracking revision history. Knowledge of the **kubectl rollout** command is what's being tested here. Permitted reference material you can use while taking the **CKAD** exam can be found [here from kubernetes.io](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-to-a-previous-revision) -- Good luck!
 
 ### Recommended Labs:
-- 60. 💻 Performing Rolling Updates and Rollbacks
+- Lab 60 💻 Performing Rolling Updates and Rollbacks
 
 ### Task Setup
 
@@ -160,7 +160,7 @@ There is an existing deployment named `mufasa` in namespace `king-of-lions`. App
 In this task. you'll create a **ConfigMap** and mount it as a volume to a **Pod**. ConfigMaps are used to pass **Environment Variables** and **Files** to Pods, so they always have the right settings and configurations every time they are built. Permitted reference material you can use while taking the **CKAD** exam can be found [here from kubernetes.io](https://kubernetes.io/docs/concepts/configuration/configmap/) -- Good luck!
 
 ### Recommended Labs:
-- 39. 💻 Persistent Configuration with ConfigMaps
+- Lab 39 💻 Persistent Configuration with ConfigMaps
 
 ### Task Setup
 
@@ -200,7 +200,7 @@ Create a ConfigMap called `metal-cm` containing the file `~/mycode/yaml/metal.ht
 In this task. you'll create a **Pod** with a **SecurityContext** within a particular namespace. When taking the CKAD exam, bear in mind that the requirement to create a **SecurityContext** will not be plainly spelled out. Pay attention to the wording of the **Summary** in this one, as it is very similar to what you can expect to see on the exam. Permitted reference material you can use while taking the **CKAD** exam can be found [here from kubernetes.io](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) -- Good luck!
 
 ### Recommended Labs:
-- Lab 25. 💻 Applying Security Contexts
+- Lab 25 💻 Applying Security Contexts
 
 ### Task Setup
 
@@ -240,7 +240,7 @@ Create a pod called `gold-bar` on the `fort-knox` namespace, with the image `bus
 In this task. you'll pulling container logs from running pods. On the CKAD it is possible that many tasks have a portion that ask you to generate such logs and put their output in a pre-made text file elsewhere. Permitted reference material you can use while taking the **CKAD** exam can be found [here from kubernetes.io](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-running-pods) -- Good luck!
 
 ### Recommended Labs:
-- 36. 💻 Kubectl Log Command
+- Lab 36 💻 Kubectl Log Command
   
 ### Task Setup
 
