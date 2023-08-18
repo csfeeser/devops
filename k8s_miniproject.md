@@ -7,14 +7,14 @@
 > Click the image for Chad's YouTube video on passing the CKAD!
 
 
-This mini-project has been written to mimic the CKAD Exam! Below are a series of tasks that you are to complete inside your assigned Alta3 machine (the same one you've been using to complete your task.). 
+This mini-project has been written to mimic the CKAD Exam! Below are a series of tasks that you are to complete inside your assigned Alta3 machine (the same one you've been using to complete your labs). 
 
-- tasks may be completed in any order!
-- tasks are PASS/FAIL- either you meet the criteria of the task or you don't!
-- it is VITALLY IMPORTANT that you run the `setup` commands at the beginning of each task, otherwise you will not be able to complete the task.
-- you are absolutely allowed to use ANY resources you want to find solutions (`kubernetes.io`, the task., etc.)
-- each task has a `teardown` option that will enable you to attempt that task again if need be!
-- how you achieve each task **does not matter**- all that matters is that the final product matches the criteria of the task.
+- Tasks may be completed in any order!
+- Tasks are PASS/FAIL- either you meet the criteria of the task or you don't!
+- It is VITALLY IMPORTANT that you run the `setup` commands at the beginning of each task, otherwise you will not be able to complete the task.
+- You are absolutely allowed to use ANY resources you want to find solutions (`kubernetes.io`, the task., etc.)
+- Each task has a `teardown` option that will enable you to attempt that task again if need be!
+- How you achieve each task **does not matter**- all that matters is that the final product matches the criteria of the task.
 
 
 
