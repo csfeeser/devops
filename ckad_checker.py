@@ -1,6 +1,7 @@
 import subprocess
 
 def move_pod():
+  try:
     # task 1: API primitives
     command = "kubectl get pod apricot -n banana"
     result = subprocess.run(command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -9,9 +10,11 @@ def move_pod():
     else:
         print("Pod 'apricot' not found in namespace 'banana'")
         return False
-
+  except:
+      return False
 
 def create_pod():
+  try:
     # task 2: pod basics
     STATUS= True
     command = "kubectl get pod singer -n talent -o jsonpath='{.metadata.name}'"
@@ -33,8 +36,11 @@ def create_pod():
         STATUS= False
 
     return STATUS
+  except:
+      return False
 
 def deploy_history():
+  try:
     # task 3: rollbacks
     DEPLOYMENT = "mufasa"
     NAMESPACE = "king-of-lions"
@@ -51,8 +57,11 @@ def deploy_history():
     else:
         print(f"Expected {DESIRED_REPLICAS} replicas, but found {CURRENT_REPLICAS} current replicas and {AVAILABLE_REPLICAS} available replicas for deployment '{DEPLOYMENT}' in namespace '{NAMESPACE}'.")
         return False
+  except:
+      return False
 
 def configmap():
+  try:
     # task 4: configmaps
     STATUS= False
     NAMESPACE = "metallica"
@@ -84,9 +93,12 @@ def configmap():
         print(f"Expected {DESIRED_REPLICAS} replicas, but found {AVAILABLE_REPLICAS} available replicas for deployment '{DEPLOYMENT}' in namespace '{NAMESPACE}'.")
 
     return STATUS
+  except:
+      return False
 
 
 def security_context():
+  try:
     # task 5: securitycontexts
     NAMESPACE = "fort-knox"
     POD_NAME = "gold-bar"
@@ -108,8 +120,11 @@ def security_context():
     else:
         print(f"Pod '{POD_NAME}' in namespace '{NAMESPACE}' does not have the correct UID and GID (1000 and 2000).")
         return False
+  except:
+      return False
 
 def log_check():
+  try:
     # task 6: container logging
     file_path = "/home/student/mycode/lincoln-logs.txt"
     lines_to_check = [
@@ -131,6 +146,8 @@ def log_check():
     except FileNotFoundError:
         print(f"The file {file_path} was not found.")
         return False
+  except:
+      return False
 
 def main():
     functions_to_check = [move_pod, create_pod, deploy_history, configmap, security_context, log_check]
@@ -139,10 +156,10 @@ def main():
     for task_num, func in enumerate(functions_to_check, start=1):
         result = func()
         if result:
-            print(f"Task {task_num} passed.")
+            print("\033[92m" + f"Task {task_num} passed." + "\033[0m") # Green text
             score += 1
         else:
-            print(f"Task {task_num} failed.")
+            print("\033[91m" + f"Task {task_num} failed." + "\033[0m") # Red text
 
     print(f"Final score: {score} out of {len(functions_to_check)}.")
 
