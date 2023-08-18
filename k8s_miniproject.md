@@ -258,7 +258,7 @@ In namespace `lincoln` there is a single pod named `vampire-hunter`. Output the 
 
 1. Locate the `vampire-hunter` pod in your cluster.
 0. Retrieve the logs from the pod's container; ONLY output the lines that contain the word **nginx**.
-0. Save this output to `lincoln-logs.txt`.
+0. Save this output to `/home/student/mycode/lincoln-logs.txt`.
 0. Verify the objectives were completed.
 
 ### Task Re-Do
