@@ -12,7 +12,7 @@ This mini-project has been written to mimic the CKAD Exam! Below are a series of
 - Tasks may be completed in any order!
 - Tasks are PASS/FAIL- either you meet the criteria of the task or you don't!
 - It is VITALLY IMPORTANT that you run the `setup` commands at the beginning of each task, otherwise you will not be able to complete the task.
-- You are absolutely allowed to use ANY resources you want to find solutions (`kubernetes.io`, the task., etc.)
+- You are absolutely allowed to use ANY resources you want to find solutions (`kubernetes.io`, your labs, ChatGPT, etc.)
 - Each task has a `teardown` option that will enable you to attempt that task again if need be!
 - How you achieve each task **does not matter**- all that matters is that the final product matches the criteria of the task.
 
