@@ -97,50 +97,7 @@ Create a single pod in namespace `talent` with the image `nginx:1.7.9`. The pod 
 
 
 
-
-  
-## Task 3: Deployments
-
-<details>
-<summary>Click here to view this task!</summary>
-
-### Objectives
-
-In this task. you'll be converting an existing **Pod** into a **Deployment** within a particular namespace. Big considerations for this type of task is knowing and understanding task.ls and selectors. Permitted reference material you can use while taking the **CKAD** exam can be found [here from kubernetes.io](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment) -- Good luck!
-
-### Task Setup
-
-1. Run the following command to setup the task.
-
-    `student@bchd:~$` `drill deploy-rolling-updates`
-
-### Summary
-
-In namespace `mythical-creatures` there is a single pod named `manticore`. Convert the pod into a deployment with 2 replicas with the name `manticore-prime`. Create the deployment and save the YAML manifest as manticore-deployment.yaml.
-
-**Approximate Weight of Actual Exam Grade:** 6%
-
-
-### Tasks
-
-1. Obtain the `manticore` Pod Manifest.
-0. Convert the `manticore` Pod into the `manticore-prime` Deployment in the file `manticore-deployment.yaml`.
-0. Create the new Deployment, deleting the old Pod.
-0. Verify the work was completed correctly.
-
-### Task Re-Do
-
-1. Want to run the task again?? Run the following script to teardown your work.
-
-    `student@bchd:~$` `teardown deploy-rolling-updates`
-
-</details>
-
-
-
-
-
-## Task 4: Rollbacks
+## Task 3: Rollbacks
 
 <details>
 <summary>Click here to view this task!</summary>
@@ -179,7 +136,7 @@ There is an existing deployment named `mufasa` in namespace `king-of-lions`. App
 
 
 
-## Task 5: ConfigMaps
+## Task 4: ConfigMaps
 
 <details>
 
@@ -217,7 +174,7 @@ Create a ConfigMap called `metal-cm` containing the file `~/mycode/yaml/metal.ht
     
     
     
-## Task 6: SecurityContexts
+## Task 5: SecurityContexts
 
 <details>
 <summary>Click here to view this task!</summary>
@@ -254,7 +211,7 @@ Create a pod called `gold-bar` on the `fort-knox` namespace, with the image `bus
 </details>
     
     
-## Task 7: Container Logging
+## Task 6: Container Logging
 
 <details>
 <summary>Click here to view this task!</summary>
