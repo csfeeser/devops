@@ -30,7 +30,8 @@ In this task, you'll be migrating a **Pod** from one particular **Namespace** to
 
 ### Task Setup
 
-1. Run the following command to setup the task.    
+1. Run the following command to setup the task.
+
     `student@bchd:~$` `drill api-primitives`
     
 ### Summary
@@ -89,6 +90,7 @@ Create a single pod in namespace `talent` with the image `nginx:1.7.9`. The pod 
 ### Task Re-Do
 
 1. Want to run the task again?? Run the following script to teardown your work.
+
     `student@bchd:~$` `teardown pod-basics`
   
 </details>
@@ -108,7 +110,8 @@ In this task. you'll be converting an existing **Pod** into a **Deployment** wit
 
 ### Task Setup
 
-1. Run the following command to setup the task.  
+1. Run the following command to setup the task.
+
     `student@bchd:~$` `drill deploy-rolling-updates`
 
 ### Summary
@@ -128,6 +131,7 @@ In namespace `mythical-creatures` there is a single pod named `manticore`. Conve
 ### Task Re-Do
 
 1. Want to run the task again?? Run the following script to teardown your work.
+
     `student@bchd:~$` `teardown deploy-rolling-updates`
 
 </details>
