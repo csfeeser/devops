@@ -1,5 +1,7 @@
 # GITHUB SKILL REVIEW
 
+<img src="https://media.makeameme.org/created/code-github.jpg" width="200">
+
 ## Commands Cheat Sheet
 
 | Action                                | Command                                              | Purpose                                         |
