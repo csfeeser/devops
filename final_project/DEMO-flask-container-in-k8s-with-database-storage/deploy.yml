@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test4-deployment2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test3
+  template:
+    metadata:
+      labels:
+        app: test3
+    spec:
+      containers:
+      - name: test3-container
+        image: ghcr.io/csfeeser/pythondemos/test3
+        volumeMounts:
+        - name: sqlite-storage
+          mountPath: /data
+      volumes:
+      - name: sqlite-storage
+        persistentVolumeClaim:
+          claimName: demo-pvc
+
+
+
+
+
+
+
+
+
